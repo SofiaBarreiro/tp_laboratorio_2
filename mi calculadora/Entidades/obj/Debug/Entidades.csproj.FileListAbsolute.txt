@@ -1,0 +1,17 @@
+E:\c sharp\tp1\Entidades\Entidades\bin\Debug\Entidades.exe.config
+E:\c sharp\tp1\Entidades\Entidades\bin\Debug\Entidades.exe
+E:\c sharp\tp1\Entidades\Entidades\bin\Debug\Entidades.pdb
+E:\c sharp\tp1\Entidades\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+E:\c sharp\tp1\Entidades\Entidades\obj\Debug\Entidades.exe
+E:\c sharp\tp1\Entidades\Entidades\obj\Debug\Entidades.pdb
+E:\c sharp\MiCalculadora\Entidades\bin\Debug\Entidades.exe.config
+E:\c sharp\MiCalculadora\Entidades\bin\Debug\Entidades.exe
+E:\c sharp\MiCalculadora\Entidades\bin\Debug\Entidades.pdb
+E:\c sharp\MiCalculadora\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+E:\c sharp\MiCalculadora\Entidades\obj\Debug\Entidades.exe
+E:\c sharp\MiCalculadora\Entidades\obj\Debug\Entidades.pdb
+C:\Users\barre\Desktop\mi calculadora\Entidades\bin\Debug\Entidades.exe.config
+C:\Users\barre\Desktop\mi calculadora\Entidades\bin\Debug\Entidades.exe
+C:\Users\barre\Desktop\mi calculadora\Entidades\bin\Debug\Entidades.pdb
+C:\Users\barre\Desktop\mi calculadora\Entidades\obj\Debug\Entidades.exe
+C:\Users\barre\Desktop\mi calculadora\Entidades\obj\Debug\Entidades.pdb
