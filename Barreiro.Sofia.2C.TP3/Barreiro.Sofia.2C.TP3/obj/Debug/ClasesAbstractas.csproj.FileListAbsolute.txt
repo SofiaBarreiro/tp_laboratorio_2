@@ -1,0 +1,7 @@
+E:\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\bin\Debug\Barreiro.Sofia.2C.TP3.dll
+E:\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\bin\Debug\Barreiro.Sofia.2C.TP3.pdb
+E:\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\obj\Debug\Barreiro.Sofia.2C.TP3.dll
+E:\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\obj\Debug\Barreiro.Sofia.2C.TP3.pdb
+E:\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\obj\Debug\ClasesAbstractas.csprojResolveAssemblyReference.cache
+E:\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\bin\Debug\Excepciones.dll
+E:\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\bin\Debug\Excepciones.pdb

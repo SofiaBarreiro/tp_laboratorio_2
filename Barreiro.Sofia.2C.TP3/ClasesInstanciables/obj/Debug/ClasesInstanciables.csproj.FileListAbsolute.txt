@@ -1,0 +1,11 @@
+E:\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\ClasesInstanciables.dll
+E:\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\ClasesInstanciables.pdb
+E:\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\Archivos.dll
+E:\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\Barreiro.Sofia.2C.TP3.dll
+E:\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\Excepciones.dll
+E:\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\Archivos.pdb
+E:\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\Barreiro.Sofia.2C.TP3.pdb
+E:\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\Excepciones.pdb
+E:\Barreiro.Sofia.2C.TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.dll
+E:\Barreiro.Sofia.2C.TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.pdb
+E:\Barreiro.Sofia.2C.TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.csprojResolveAssemblyReference.cache

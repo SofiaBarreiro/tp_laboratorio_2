@@ -1,0 +1,7 @@
+E:\Barreiro.Sofia.2C.TP3\Archivos\bin\Debug\Archivos.dll
+E:\Barreiro.Sofia.2C.TP3\Archivos\bin\Debug\Archivos.pdb
+E:\Barreiro.Sofia.2C.TP3\Archivos\obj\Debug\Archivos.dll
+E:\Barreiro.Sofia.2C.TP3\Archivos\obj\Debug\Archivos.pdb
+E:\Barreiro.Sofia.2C.TP3\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+E:\Barreiro.Sofia.2C.TP3\Archivos\bin\Debug\Excepciones.dll
+E:\Barreiro.Sofia.2C.TP3\Archivos\bin\Debug\Excepciones.pdb
