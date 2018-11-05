@@ -94,7 +94,7 @@ namespace ClasesInstanciables
             if (uni.Jornadas != null)
             {
 
-                cadena.AppendLine("Jornadas: ");
+                cadena.AppendLine("JORNADAS: ");
                 foreach (Jornada aux in uni.Jornadas)
                 {
 
@@ -135,16 +135,20 @@ namespace ClasesInstanciables
         }
         public static bool operator ==(Universidad g, Profesor i)
         {
-
+            bool retorno = false; 
             foreach (Profesor aux in g.Instructores)
             {
                 if (aux == i)
                 {
-                    return true;
+                    retorno= true;
+                }
+                else
+                {
+                    retorno = false;
                 }
 
             }
-            return false;
+            return retorno;
 
 
         }
@@ -164,6 +168,8 @@ namespace ClasesInstanciables
         }
         public static Profesor operator ==(Universidad g, EClases clases)
         {
+
+            Profesor p = null;
             try
             {
 
@@ -182,7 +188,7 @@ namespace ClasesInstanciables
                 Console.WriteLine(e.Message);
             }
 
-            return null;
+            return p;
         }
 
 

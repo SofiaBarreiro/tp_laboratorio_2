@@ -44,7 +44,10 @@ namespace ClasesInstanciables
         protected override string MostrarDatos()
         {
 
-            return this.ToString();
+            StringBuilder cadena = new StringBuilder();
+            cadena.AppendLine(base.MostrarDatos());
+            cadena.AppendLine(this.ParticiparEnClase());
+            return cadena.ToString();
 
 
         }
@@ -58,15 +61,16 @@ namespace ClasesInstanciables
 
         public static bool operator ==(Profesor i, Universidad.EClases clase)
         {
+            bool retorno = false;
             foreach (Universidad.EClases aux in i.clasesDelDia)
             {
 
-                if (clase == aux)
+                if ((Universidad.EClases)clase == (Universidad.EClases)aux)
                 {
-                    return true;
+                    retorno= true;
                 }
             }
-            return false;
+            return retorno;
         }
 
         static Profesor()
@@ -82,10 +86,10 @@ namespace ClasesInstanciables
         protected override string ParticiparEnClase()
         {
             StringBuilder cadena = new StringBuilder();
-            cadena.AppendFormat("Clases del dia: ");
+            cadena.AppendFormat("CLASES DEL DIA: ");
             foreach (Universidad.EClases aux in this.clasesDelDia) {
 
-                cadena.AppendFormat("{0}", aux.ToString());
+                cadena.AppendLine(aux.ToString());
             }
 
             return cadena.ToString();
@@ -103,11 +107,8 @@ namespace ClasesInstanciables
 
         public override string ToString()
         {
-            StringBuilder cadena = new StringBuilder();
-            cadena.AppendLine(base.ToString());
-            cadena.AppendLine(this.ParticiparEnClase());
-            return cadena.ToString();
 
+            return this.MostrarDatos();
         }
 
     }

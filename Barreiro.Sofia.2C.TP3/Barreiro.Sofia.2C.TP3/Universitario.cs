@@ -13,7 +13,8 @@ namespace EntidadesAbstractas
         public override bool Equals(object obj)
         {
 
-            if (obj is Universitario) {
+            if (obj is Universitario)
+            {
 
                 return true;
             }
@@ -24,10 +25,10 @@ namespace EntidadesAbstractas
 
         protected virtual string MostrarDatos()
         {
-           
 
-            string retorno = string.Format("legajo: {0}\n{1}", this.legajo, base.ToString());
-            return retorno;
+            StringBuilder cadena = new StringBuilder();
+            cadena.AppendFormat("LEGAJO: {0}\n{1}", this.legajo, base.ToString());
+            return cadena.ToString();
 
         }
 

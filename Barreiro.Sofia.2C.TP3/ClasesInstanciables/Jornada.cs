@@ -72,20 +72,6 @@ namespace ClasesInstanciables
             Texto texto = new Texto();
             return texto.Guardar("Jornada.txt", jornada.ToString());
 
-            //string archivo = "nuevaJornada";
-            //Texto<Jornada> aux = new Texto<Jornada>();
-            //((IArchivo<Jornada>)aux).Guardar(archivo, jornada);
-
-
-
-            ////GuardarTexto<string, int> aux = new GuardarTexto<string, int>();
-
-            //bool palabra = ((IGuardar<string, int>)aux).Guardar("");
-
-            //int nro = ((IGuardar<string, int>)aux).Leer();
-
-
-
         }
 
         public static string Leer()
@@ -108,8 +94,8 @@ namespace ClasesInstanciables
         public Jornada(Universidad.EClases clase, Profesor instructor)
             :this()
         {
-            this.Clase = clase;
-            this.Instructor = instructor;
+            this.clase = clase;
+            this.instructor = instructor;
 
         }
 
@@ -158,12 +144,13 @@ namespace ClasesInstanciables
             {
 
                 StringBuilder cadena = new StringBuilder();
-                cadena.AppendLine(this.Clase.ToString());
-                cadena.AppendLine(this.Instructor.ToString());
+                cadena.AppendFormat("CLASE DE {0} POR {1}", this.Clase.ToString(), this.Instructor.ToString());
+                cadena.AppendLine("ALUMNOS");
                 foreach (Alumno aux in this.alumnos)
                 {
                     cadena.AppendLine(aux.ToString());
                 }
+                cadena.AppendLine("<------------------------------------------------>");
 
                 return cadena.ToString();
             }

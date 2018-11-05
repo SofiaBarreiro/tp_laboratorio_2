@@ -37,8 +37,23 @@ namespace ClasesInstanciables
 
             StringBuilder cadena = new StringBuilder();
             cadena.AppendLine(base.MostrarDatos());
-            cadena.AppendLine(this.ParticiparEnClase());
-            cadena.AppendFormat("estado cuenta: {0}", this.estadoCuenta.ToString());
+            switch (this.estadoCuenta)
+            {
+                case EEstadoCuenta.AlDia:
+                    cadena.AppendLine("ESTADO DE CUENTA: CUOTA AL DIA");
+                    break;
+                case EEstadoCuenta.Deudor:
+                    cadena.AppendLine("ESTADO DE CUENTA: CUOTA CON DEUDA");
+                    break;
+                case EEstadoCuenta.Becado:
+                    cadena.AppendLine("ESTADO DE CUENTA: BECADO");
+                    break;
+                default:
+                    cadena.AppendLine("ESTADO DE CUENTA: " + this.estadoCuenta.ToString());
+                    break;
+
+            }
+            cadena.AppendLine("TOMA CLASES DE: " + this.claseQueToma.ToString());
             return cadena.ToString();
 
         }
@@ -47,11 +62,8 @@ namespace ClasesInstanciables
         public static bool operator !=(Alumno a, Universidad.EClases clases)
         {
 
-            if (a.claseQueToma != clases)
-            {
-                return true;
-            }
-            return false;
+            
+            return (Universidad.EClases)a.claseQueToma != (Universidad.EClases)clases; 
         }
 
         public static bool operator ==(Alumno a, Universidad.EClases clases)
@@ -76,7 +88,7 @@ namespace ClasesInstanciables
 
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return this.MostrarDatos();
 

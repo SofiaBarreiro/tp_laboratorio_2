@@ -5,3 +5,10 @@ E:\Barreiro.Sofia.2C.TP3\Archivos\obj\Debug\Archivos.pdb
 E:\Barreiro.Sofia.2C.TP3\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
 E:\Barreiro.Sofia.2C.TP3\Archivos\bin\Debug\Excepciones.dll
 E:\Barreiro.Sofia.2C.TP3\Archivos\bin\Debug\Excepciones.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Archivos\bin\Debug\Archivos.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Archivos\bin\Debug\Archivos.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Archivos\bin\Debug\Excepciones.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Archivos\bin\Debug\Excepciones.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Archivos\obj\Debug\Archivos.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Archivos\obj\Debug\Archivos.pdb

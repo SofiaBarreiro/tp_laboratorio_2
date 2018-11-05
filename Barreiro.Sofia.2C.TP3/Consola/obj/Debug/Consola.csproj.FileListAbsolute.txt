@@ -12,3 +12,17 @@ E:\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\Excepciones.pdb
 E:\Barreiro.Sofia.2C.TP3\Consola\obj\Debug\Consola.exe
 E:\Barreiro.Sofia.2C.TP3\Consola\obj\Debug\Consola.pdb
 E:\Barreiro.Sofia.2C.TP3\Consola\obj\Debug\Consola.csprojResolveAssemblyReference.cache
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\Consola.exe.config
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\obj\Debug\Consola.exe
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\obj\Debug\Consola.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\Consola.exe
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\Consola.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\Archivos.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\Barreiro.Sofia.2C.TP3.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\ClasesInstanciables.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\Excepciones.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\Archivos.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\Barreiro.Sofia.2C.TP3.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\ClasesInstanciables.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\Excepciones.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\obj\Debug\Consola.csprojResolveAssemblyReference.cache

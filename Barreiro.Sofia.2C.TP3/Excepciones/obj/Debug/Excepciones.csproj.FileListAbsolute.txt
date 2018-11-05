@@ -3,3 +3,8 @@ E:\Barreiro.Sofia.2C.TP3\Excepciones\bin\Debug\Excepciones.pdb
 E:\Barreiro.Sofia.2C.TP3\Excepciones\obj\Debug\Excepciones.dll
 E:\Barreiro.Sofia.2C.TP3\Excepciones\obj\Debug\Excepciones.pdb
 E:\Barreiro.Sofia.2C.TP3\Excepciones\obj\Debug\Excepciones.csprojResolveAssemblyReference.cache
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Excepciones\bin\Debug\Excepciones.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Excepciones\bin\Debug\Excepciones.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Excepciones\obj\Debug\Excepciones.csprojResolveAssemblyReference.cache
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Excepciones\obj\Debug\Excepciones.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Excepciones\obj\Debug\Excepciones.pdb

@@ -5,3 +5,10 @@ E:\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\obj\Debug\Barreiro.Sofia.2C.TP3.p
 E:\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\obj\Debug\ClasesAbstractas.csprojResolveAssemblyReference.cache
 E:\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\bin\Debug\Excepciones.dll
 E:\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\bin\Debug\Excepciones.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\bin\Debug\Barreiro.Sofia.2C.TP3.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\bin\Debug\Barreiro.Sofia.2C.TP3.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\bin\Debug\Excepciones.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\bin\Debug\Excepciones.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\obj\Debug\ClasesAbstractas.csprojResolveAssemblyReference.cache
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\obj\Debug\Barreiro.Sofia.2C.TP3.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Barreiro.Sofia.2C.TP3\obj\Debug\Barreiro.Sofia.2C.TP3.pdb

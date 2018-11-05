@@ -99,6 +99,7 @@ namespace Consola
             {
                 Console.WriteLine(e.Message);
             }
+            
             Console.WriteLine(gim.ToString());
             Console.ReadKey();
             Console.Clear();

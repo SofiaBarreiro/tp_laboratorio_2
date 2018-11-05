@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using Excepciones;
 
 
@@ -37,8 +38,13 @@ namespace EntidadesAbstractas
             }
             set
             {
-                this.apellido=ValidarNombreApellido(value);
-                
+                if (ValidarNombreApellido(value) != null)
+                {
+
+                    this.apellido = this.ValidarNombreApellido(value);
+                }
+
+
             }
         }
 
@@ -54,9 +60,10 @@ namespace EntidadesAbstractas
             }
             set
             {
-                this.dni=this.ValidarDni(this.nacionalidad, value);
+                this.dni = ValidarDni(this.Nacionalidad, value);
             }
         }
+        
 
 
         public ENacionalidad Nacionalidad
@@ -79,7 +86,10 @@ namespace EntidadesAbstractas
             }
             set
             {
-                this.nombre = ValidarNombreApellido(value);
+                if (ValidarNombreApellido(value) != null)
+                {
+                    this.nombre = this.ValidarNombreApellido(value);
+                }
             }
         }
 
@@ -92,10 +102,10 @@ namespace EntidadesAbstractas
                 {
                     this.dni = ValidarDni(this.nacionalidad, value);
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
 
-                    throw new NacionalidadInvalidaException();
+                    throw new NacionalidadInvalidaException("La nacionalidad no coincide con el DNI");
                 }
             }
         }
@@ -134,10 +144,9 @@ namespace EntidadesAbstractas
 
             StringBuilder cadena = new StringBuilder();
 
-            cadena.AppendFormat("Nombre: {0} ", this.Nombre);
-            cadena.AppendFormat("Apellido: {0} ", this.Apellido);
-            cadena.AppendFormat("Nacionalidad: {0} ", this.nacionalidad.ToString());
-            cadena.AppendFormat("Dni: {0} ", this.DNI);
+            cadena.AppendLine("NOMBRE COMPLETO: " + this.Apellido + ", " + this.Nombre);
+            cadena.AppendLine("NACIONALIDAD: " + this.Nacionalidad.ToString());
+            
 
             return cadena.ToString();
 
@@ -162,7 +171,7 @@ namespace EntidadesAbstractas
                 else {
 
 
-                    throw new DniInvalidoException();
+                    throw new DniInvalidoException("el dni no coincide");
 
                 }
 
@@ -175,30 +184,23 @@ namespace EntidadesAbstractas
         }
         private int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
-
-            int datoAux=0;
-
-            int.TryParse(dato, out datoAux);
-            ValidarDni(nacionalidad, datoAux);
-            return datoAux;
-
+            return ValidarDni(nacionalidad, int.Parse(dato));
 
         }
 
         private string ValidarNombreApellido(string dato)
         {
 
-            foreach (char letraAux in dato)
+            Regex rg = new Regex(@"^[a-zA-Z]$");
+            if (rg.IsMatch(dato))
             {
-                if (!char.IsLetter(letraAux))
-                {
 
-                    dato = "";
-                    break;
-                }
-
+                return dato;
             }
-            return dato;
+            else
+            {
+                return null;
+            }
 
         }
 
