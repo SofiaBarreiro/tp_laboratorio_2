@@ -1,0 +1,8 @@
+E:\Barreiro.Sofia.TP4.2C\Barreiro.Sofia.TP4.2C\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+E:\Barreiro.Sofia.TP4.2C\Barreiro.Sofia.TP4.2C\bin\Debug\Barreiro.Sofia.TP4.2C.dll.config
+E:\Barreiro.Sofia.TP4.2C\Barreiro.Sofia.TP4.2C\bin\Debug\Barreiro.Sofia.TP4.2C.dll
+E:\Barreiro.Sofia.TP4.2C\Barreiro.Sofia.TP4.2C\bin\Debug\Barreiro.Sofia.TP4.2C.pdb
+E:\Barreiro.Sofia.TP4.2C\Barreiro.Sofia.TP4.2C\obj\Debug\Barreiro.Sofia.TP4.2C.dll
+E:\Barreiro.Sofia.TP4.2C\Barreiro.Sofia.TP4.2C\obj\Debug\Barreiro.Sofia.TP4.2C.pdb
+E:\Barreiro.Sofia.TP4.2C\Barreiro.Sofia.TP4.2C\obj\Debug\Barreiro.Sofia.TP4._2C.Properties.Resources.resources
+E:\Barreiro.Sofia.TP4.2C\Barreiro.Sofia.TP4.2C\obj\Debug\Entidades.csproj.GenerateResource.Cache

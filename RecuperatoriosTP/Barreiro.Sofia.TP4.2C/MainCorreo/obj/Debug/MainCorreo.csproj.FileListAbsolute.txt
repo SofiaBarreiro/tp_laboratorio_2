@@ -1,0 +1,11 @@
+E:\Barreiro.Sofia.TP4.2C\MainCorreo\bin\Debug\MainCorreo.exe.config
+E:\Barreiro.Sofia.TP4.2C\MainCorreo\bin\Debug\MainCorreo.exe
+E:\Barreiro.Sofia.TP4.2C\MainCorreo\bin\Debug\MainCorreo.pdb
+E:\Barreiro.Sofia.TP4.2C\MainCorreo\obj\Debug\MainCorreo.csprojResolveAssemblyReference.cache
+E:\Barreiro.Sofia.TP4.2C\MainCorreo\obj\Debug\MainCorreo.Properties.Resources.resources
+E:\Barreiro.Sofia.TP4.2C\MainCorreo\obj\Debug\MainCorreo.csproj.GenerateResource.Cache
+E:\Barreiro.Sofia.TP4.2C\MainCorreo\obj\Debug\MainCorreo.exe
+E:\Barreiro.Sofia.TP4.2C\MainCorreo\obj\Debug\MainCorreo.pdb
+E:\Barreiro.Sofia.TP4.2C\MainCorreo\bin\Debug\Barreiro.Sofia.TP4.2C.dll
+E:\Barreiro.Sofia.TP4.2C\MainCorreo\bin\Debug\Barreiro.Sofia.TP4.2C.pdb
+E:\Barreiro.Sofia.TP4.2C\MainCorreo\obj\Debug\MainCorreo.FrmPpal.resources

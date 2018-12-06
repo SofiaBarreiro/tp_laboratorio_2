@@ -1,0 +1,8 @@
+E:\Barreiro.Sofia.TP4.2C\TestUnitario\bin\Debug\TestUnitario.dll
+E:\Barreiro.Sofia.TP4.2C\TestUnitario\bin\Debug\TestUnitario.pdb
+E:\Barreiro.Sofia.TP4.2C\TestUnitario\bin\Debug\Barreiro.Sofia.TP4.2C.dll
+E:\Barreiro.Sofia.TP4.2C\TestUnitario\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Barreiro.Sofia.TP4.2C\TestUnitario\bin\Debug\Barreiro.Sofia.TP4.2C.pdb
+E:\Barreiro.Sofia.TP4.2C\TestUnitario\obj\Debug\TestUnitario.csprojResolveAssemblyReference.cache
+E:\Barreiro.Sofia.TP4.2C\TestUnitario\obj\Debug\TestUnitario.dll
+E:\Barreiro.Sofia.TP4.2C\TestUnitario\obj\Debug\TestUnitario.pdb
