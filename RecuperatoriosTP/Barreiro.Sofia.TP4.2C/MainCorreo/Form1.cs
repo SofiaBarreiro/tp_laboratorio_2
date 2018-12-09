@@ -24,6 +24,10 @@ namespace MainCorreo
             InitializeComponent();
             correo = new Correo();
             mtxTrackingID.Focus();
+
+
+          
+
         }
         #endregion
 
@@ -98,6 +102,7 @@ namespace MainCorreo
 
         private void MostrarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+
             this.MostrarInformacion<Paquete>((IMostrar<Paquete>)lstEstadoEntregado.SelectedItem);
 
         }
@@ -120,8 +125,15 @@ namespace MainCorreo
                 MessageBox.Show(mensaje, "Paquete repetido", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }
             ActualizarEstados();
+            paquete.InformarSQL += MostrarAdvertencia;
 
 
+        }
+
+        void MostrarAdvertencia()
+        {
+
+            MessageBox.Show("No se ha podido guardar el archivo\n", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void FrmPpal_Load(object sender, EventArgs e)
@@ -147,7 +159,24 @@ namespace MainCorreo
 
 
         }
+
+
+        private void lstEstadoEntregado_MouseUp_1(object sender, MouseEventArgs e)
+        {
+
+            if (e.Button == MouseButtons.Right)
+            {
+                int index = lstEstadoEntregado.IndexFromPoint(e.Location);
+                lstEstadoEntregado.SelectedIndex = index;
+                cmsListas.Show(Control.MousePosition);
+            }
+        }
+
         #endregion
+
+
+
+
 
 
     }

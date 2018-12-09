@@ -10,12 +10,27 @@ namespace ClasesInstanciables
     
     sealed public class Alumno : Universitario
     {
+
+        #region Atributos
         private Universidad.EClases claseQueToma;
 
-        private Alumno.EEstadoCuenta estadoCuenta;
+        private EEstadoCuenta estadoCuenta;
 
+        #endregion
+
+
+        #region Enumeradores
+        public enum EEstadoCuenta
+        {
+
+            AlDia,
+            Deudor,
+            Becado,
+        }
+        #endregion
+        #region Constructores
         public Alumno()
-            :base()
+            :base()      
         {
         }
 
@@ -31,65 +46,88 @@ namespace ClasesInstanciables
         {
             this.estadoCuenta = estadoCuenta;
         }
+        #endregion
 
+        #region Metodos
+        /// <summary>
+        /// Retorna los datos de Universitario y de Alumno
+        /// </summary>
+        /// <returns>cadena con los datos</returns>
         protected override string MostrarDatos()
         {
 
             StringBuilder cadena = new StringBuilder();
-            cadena.AppendLine(base.MostrarDatos());
-            cadena.AppendLine(this.ParticiparEnClase());
-            cadena.AppendFormat("estado cuenta: {0}", this.estadoCuenta.ToString());
+            cadena.AppendFormat(base.MostrarDatos());
+            cadena.AppendFormat("\nEstado de Cuenta: {0}", this.estadoCuenta);
+            cadena.AppendFormat(this.ParticiparEnClase());
             return cadena.ToString();
 
+
+
         }
 
 
-        public static bool operator !=(Alumno a, Universidad.EClases clases)
-        {
-
-            if (a.claseQueToma != clases)
-            {
-                return true;
-            }
-            return false;
-        }
-
-        public static bool operator ==(Alumno a, Universidad.EClases clases)
-        {
-
-            if (a.claseQueToma == clases)
-            {
-
-                if (a.estadoCuenta != Alumno.EEstadoCuenta.Deudor)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-
-        protected override string ParticiparEnClase()
-        {
-
-            return "TOMA CLASE DE: " + this.claseQueToma.ToString();
-
-        }
-
-        public string ToString()
+        /// <summary>
+        /// llama al metodo mostrarDatos de la clase Alumno
+        /// </summary>
+        /// <returns>cadena de MostraDatos</returns>
+        public override string ToString()
         {
             return this.MostrarDatos();
 
+            
+
 
         }
-        public enum EEstadoCuenta
+
+
+        /// <summary>
+        /// retorna una cadena de texto con el nombre de la clase que toma el alumno
+        /// </summary>
+        /// <returns></returns>
+        protected override string ParticiparEnClase()
+        {
+            StringBuilder cadena = new StringBuilder();
+            cadena.AppendFormat("\nTOMA CLASES DE :{0}", this.claseQueToma.ToString());
+            return cadena.ToString();
+
+        }
+        #endregion
+
+        #region Operadores
+        public static bool operator !=(Alumno a, Universidad.EClases clase)
         {
 
-            AlDia,
-            Deudor,
-            Becado,
+            if (!(a == null) && (a.claseQueToma != clase))
+            {
+                return true;
+            }
+               
+            return false;
+        }
+
+        /// <summary>
+        /// Compara si un alumno se encuentra tomando esa clase, y que no este en estado deudor
+        /// </summary>
+        /// <param name="a">objeto de la clase Alumno</param>
+        /// <param name="clase"></param>
+        /// <returns>si cunple con los requisitos</returns>
+        public static bool operator ==(Alumno a, Universidad.EClases clase)
+        {
+            bool retorno = false;
+            if ((!(a != clase)) && (a.estadoCuenta != EEstadoCuenta.Deudor))
+            {
+                retorno = true;
+            }
+            return retorno;
         }
 
 
+        #endregion
+
+        
+        
+
+     
     }
 }

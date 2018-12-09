@@ -9,14 +9,15 @@ namespace Excepciones
     public class DniInvalidoException : Exception
     {
 
-        private string mensajeBase;
+        private static string mensajeBase= "DNI INCORRECTO";
 
         public DniInvalidoException()
+            :this(mensajeBase)
         {
 
         }
         public DniInvalidoException(Exception e)
-            :base(e.Message)
+            :this(mensajeBase, e)
         {
         }
 
@@ -25,7 +26,7 @@ namespace Excepciones
         {
         }
         public DniInvalidoException(string message, Exception e )
-            : base(message)
+            : base(message, e)
         {
         }
     }

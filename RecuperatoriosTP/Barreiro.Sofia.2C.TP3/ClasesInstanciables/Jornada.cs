@@ -23,12 +23,14 @@ namespace ClasesInstanciables
     [XmlInclude(typeof(Profesor))]
     public class Jornada
     {
+
+        #region Atributos
         private List<Alumno> alumnos;
         private Universidad.EClases clase;
         private Profesor instructor;
 
-
-
+        #endregion
+        #region Propiedades
 
         public List<Alumno> Alumnos
         {
@@ -65,61 +67,105 @@ namespace ClasesInstanciables
             }
         }
 
-        public static bool Guardar(Jornada jornada)
-        {
 
-
-            Texto texto = new Texto();
-            return texto.Guardar("Jornada.txt", jornada.ToString());
-
-            //string archivo = "nuevaJornada";
-            //Texto<Jornada> aux = new Texto<Jornada>();
-            //((IArchivo<Jornada>)aux).Guardar(archivo, jornada);
+        #endregion
 
 
 
-            ////GuardarTexto<string, int> aux = new GuardarTexto<string, int>();
-
-            //bool palabra = ((IGuardar<string, int>)aux).Guardar("");
-
-            //int nro = ((IGuardar<string, int>)aux).Leer();
-
-
-
-        }
-
-        public static string Leer()
-        {
-            string cadena = " ";
-            Texto texto = new Texto();
-            texto.Leer("Jornada.txt", out cadena);
-            return cadena;
-
-
-        }
-
-
+        #region Constructores
         private Jornada()
         {
 
-            alumnos = new List<Alumno>();
+            this.alumnos = new List<Alumno>();
         }
 
         public Jornada(Universidad.EClases clase, Profesor instructor)
-            :this()
+            : this()
         {
-            this.Clase = clase;
-            this.Instructor = instructor;
+            this.clase = clase;
+            this.instructor = instructor;
 
         }
 
-        
+        #endregion
+
+        #region Metodos
+        /// <summary>
+        /// guarda los datos de jornada en un archivo txt, caso contrario lanza una excepcion
+        /// </summary>
+        /// <param name="jornada"></param>
+        /// <returns>true si no lanzo la excepcion</returns>
+        public static bool Guardar(Jornada jornada)
+        {
+            bool retorno = false;
+            Texto nuevo = new Texto();
+            try
+            {
+                nuevo.Guardar("Jornada.txt", jornada.ToString());
+                retorno = true;
+                
+            }
+            catch (ArchivosException e)
+            {
+                throw new ArchivosException(e);
+            }
+            return retorno;
+
+
+        }
+
+        /// <summary>
+        /// lee el archivo Jornada.txt
+        /// </summary>
+        /// <returns>cadena de texto con los datos del archivo</returns>
+        public static string Leer()
+        {
+            Texto nuevo = new Texto();
+            string texto = null;
+            try
+            {
+                nuevo.Leer("Jornada.txt", out texto);
+            }
+            catch (ArchivosException e)
+            {
+                throw new ArchivosException(e);
+            }
+            return texto;
+
+
+        }
+
+
+
+        /// <summary>
+        /// retorna los datos de la clase Jornada
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            StringBuilder cadena = new StringBuilder();
+            cadena.AppendFormat("\nTOMA CLASES DE: {0}", this.Clase);
+            cadena.AppendFormat("\nPOR: {0} ", this.Instructor);
+            cadena.AppendFormat("\nALUMNOS: ");
+            foreach (Alumno aux in this.Alumnos)
+            {
+                cadena.AppendLine(aux.ToString());
+            }
+            cadena.AppendFormat("-------------------------------------->");
+            return cadena.ToString();
+        }
+
+            #endregion
+
+            #region Operadores
         public static bool operator ==(Jornada j, Alumno a)
         {
-            if (a == (Universidad.EClases)j.Clase)
+            foreach (Alumno i in j.alumnos)
             {
-                return true;
-                
+                if (i == a)
+                {
+                    return true;
+                }
             }
             return false;
         }
@@ -127,53 +173,27 @@ namespace ClasesInstanciables
         {
             return !(j == a);
         }
+        /// <summary>
+        /// comprueba que un alumno no se encuentre ya dentro de la misma jornada, caso contrario agrega un nuevo alumno
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static Jornada operator +(Jornada j, Alumno a)
         {
-            bool flag = false;
-            foreach (Alumno aux in j.alumnos)
-            {
-                if (aux == a)
-                {
-                    flag= true;
-                    break;
-                }
-                
-            }
-            if (flag == false)
+            if (!(j == a))
             {
                 j.alumnos.Add(a);
+                return j;
             }
-            else
-            {
-                throw new AlumnoRepetidoException();
-            }
-
 
             return j;
         }
 
-        public override string ToString()
-        {
-            if (!object.Equals(this, null) && !object.Equals(this.Clase, null) && !object.Equals(this.Instructor, null))
-            {
+        #endregion
 
-                StringBuilder cadena = new StringBuilder();
-                cadena.AppendLine(this.Clase.ToString());
-                cadena.AppendLine(this.Instructor.ToString());
-                foreach (Alumno aux in this.alumnos)
-                {
-                    cadena.AppendLine(aux.ToString());
-                }
 
-                return cadena.ToString();
-            }
-            else {
+    
 
-                return "";
-            }
-            
-            
-
-        }
     }
 }

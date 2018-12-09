@@ -9,3 +9,14 @@ E:\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\Excepciones.pdb
 E:\Barreiro.Sofia.2C.TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.dll
 E:\Barreiro.Sofia.2C.TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.pdb
 E:\Barreiro.Sofia.2C.TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.csprojResolveAssemblyReference.cache
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\ClasesInstanciables.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\ClasesInstanciables.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\Archivos.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\Barreiro.Sofia.2C.TP3.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\Excepciones.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\Archivos.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\Barreiro.Sofia.2C.TP3.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\ClasesInstanciables\bin\Debug\Excepciones.pdb
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.csprojResolveAssemblyReference.cache
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.dll
+C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.pdb

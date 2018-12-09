@@ -1,5 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Excepciones;
+using ClasesInstanciables;
+
 
 namespace Test2
 {
@@ -7,8 +10,7 @@ namespace Test2
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
-        {
-        }
+
+
     }
 }

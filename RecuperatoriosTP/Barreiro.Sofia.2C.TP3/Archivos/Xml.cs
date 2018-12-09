@@ -14,34 +14,55 @@ namespace Archivos
     public class Xml <T> : IArchivo<T>
     {
 
+        /// <summary>
+        /// serliaza datos y los guarda en un archivo XML
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Guardar(string archivo, T datos)
         {
 
+            TextWriter writer = null;
             try
             {
-                TextWriter writer = new StreamWriter(archivo);
+                 writer= new StreamWriter(archivo);
                 XmlSerializer ser = new XmlSerializer(typeof(T));
                 ser.Serialize(writer, datos);
                 return true;
             }
             catch (Exception e)
             {
-                
+
                 return false;
                 throw new ArchivosException(e);
 
 
             }
+            finally
+            {
+                writer.Close();
+
+            }
+
+
            
         }
 
+        /// <summary>
+        /// deserializa datos y los guadar en un archivo xml
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Leer(string archivo, out T datos)
         {
+            TextReader reader = null;
             try
             {
 
                 XmlSerializer ser = new XmlSerializer(typeof(T));
-                TextReader reader = new StreamReader(archivo);
+                 reader= new StreamReader(archivo);
                 datos = (T)ser.Deserialize(reader);
                 reader.Close();
                 return true;
@@ -52,6 +73,11 @@ namespace Archivos
                 Console.WriteLine(e.Message);
                 datos = default(T);
                 return false;
+            }
+            finally
+            {
+                reader.Close();
+
             }
         }
 

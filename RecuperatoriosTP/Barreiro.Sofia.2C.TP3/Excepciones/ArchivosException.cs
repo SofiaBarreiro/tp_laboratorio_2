@@ -10,7 +10,7 @@ namespace Excepciones
     {
 
         public ArchivosException(Exception innerException)
-            :base(innerException.Message)
+            :base(innerException.Message, innerException)
         {
            
 

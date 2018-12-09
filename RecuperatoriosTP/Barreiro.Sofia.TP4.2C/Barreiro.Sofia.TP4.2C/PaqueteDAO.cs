@@ -10,13 +10,14 @@ using System.Threading.Tasks;
 namespace Entidades
 {
 
-
     public static class PaqueteDAO
     {
         #region Atributos
 
         static SqlCommand comando; 
         static SqlConnection conexion;
+        
+
         #endregion
 
         #region Metodos
@@ -27,16 +28,19 @@ namespace Entidades
         /// <returns></returns>
         public static bool Insertar(Paquete p)
         {
-            bool retorno = false;
-            string query = "INSERT INTO Paquetes (direccionEntrega,trackingID,alumno) VALUES(";
-            query = query + "'" + p.DireccionEntrega + "','" + p.TrackingID + "','" + "Barreiro Sofia'" + ")";
 
+            bool retorno = true;
             try
             {
-                PaqueteDAO.comando.CommandText = query;
+
                 PaqueteDAO.conexion.Open();
-                PaqueteDAO.comando.ExecuteNonQuery();
-                retorno = true;
+                if (!PaqueteDAO.EjecutarConsulta(p))
+                {
+
+                    retorno = false;
+                }
+                
+
             }
             catch (Exception e)
             {
@@ -47,8 +51,14 @@ namespace Entidades
                 if (retorno)
                 {
                     PaqueteDAO.conexion.Close();
+                    
+
                 }
             }
+
+           
+
+
             return retorno;
         }
 
@@ -66,6 +76,28 @@ namespace Entidades
             conexion = new SqlConnection("Data Source=.;Initial Catalog=correo-sp-2017;Integrated Security=True");
             PaqueteDAO.comando.CommandType = System.Data.CommandType.Text;
             PaqueteDAO.comando.Connection = PaqueteDAO.conexion;
+
+        }
+
+
+        public static bool EjecutarConsulta(Paquete p)
+        {
+            bool retorno = false;
+            try
+            {
+                string query = "INSERT INTO Paquetes (direccionEntrega,trackingID,alumno) VALUES(";
+                query = query + "'" + p.DireccionEntrega + "','" + p.TrackingID + "','" + "Barreiro Sofia'" + ")";
+                PaqueteDAO.comando.CommandText = query;
+                PaqueteDAO.comando.ExecuteNonQuery();
+                retorno = true;
+
+
+            } catch(Exception e)
+            {
+                retorno = false;
+            }
+
+            return retorno;
 
         }
 

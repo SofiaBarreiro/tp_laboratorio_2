@@ -4,14 +4,8 @@
     <Alumno>
       <Apellido>Lopez</Apellido>
       <DNI>12234456</DNI>
-      <Nacionalidad>Extranjero</Nacionalidad>
+      <Nacionalidad>Argentino</Nacionalidad>
       <Nombre>Juan</Nombre>
-    </Alumno>
-    <Alumno>
-      <Apellido>Martinez</Apellido>
-      <DNI>12234458</DNI>
-      <Nacionalidad>Extranjero</Nacionalidad>
-      <Nombre>Juana</Nombre>
     </Alumno>
     <Alumno>
       <Apellido>Hernandez</Apellido>
@@ -22,13 +16,13 @@
     <Alumno>
       <Apellido>Gonzalez</Apellido>
       <DNI>12236456</DNI>
-      <Nacionalidad>Extranjero</Nacionalidad>
+      <Nacionalidad>Argentino</Nacionalidad>
       <Nombre>Carlos</Nombre>
     </Alumno>
     <Alumno>
       <Apellido>Perez</Apellido>
       <DNI>12234656</DNI>
-      <Nacionalidad>Extranjero</Nacionalidad>
+      <Nacionalidad>Argentino</Nacionalidad>
       <Nombre>Juan</Nombre>
     </Alumno>
     <Alumno>
@@ -40,7 +34,7 @@
     <Alumno>
       <Apellido>Smith</Apellido>
       <DNI>22236456</DNI>
-      <Nacionalidad>Extranjero</Nacionalidad>
+      <Nacionalidad>Argentino</Nacionalidad>
       <Nombre>Rodrigo</Nombre>
     </Alumno>
   </Alumnos>
@@ -48,34 +42,11 @@
     <Profesor>
       <Apellido>Lopez</Apellido>
       <DNI>12234456</DNI>
-      <Nacionalidad>Extranjero</Nacionalidad>
+      <Nacionalidad>Argentino</Nacionalidad>
       <Nombre>Juan</Nombre>
-    </Profesor>
-    <Profesor>
-      <Apellido>Juarez</Apellido>
-      <DNI>32234456</DNI>
-      <Nacionalidad>Extranjero</Nacionalidad>
-      <Nombre>Roberto</Nombre>
     </Profesor>
   </Instructores>
   <Jornadas>
-    <Jornada>
-      <Alumnos>
-        <Alumno>
-          <Apellido>Lopez</Apellido>
-          <DNI>12234456</DNI>
-          <Nacionalidad>Extranjero</Nacionalidad>
-          <Nombre>Juan</Nombre>
-        </Alumno>
-        <Alumno>
-          <Apellido>Gonzalez</Apellido>
-          <DNI>12236456</DNI>
-          <Nacionalidad>Extranjero</Nacionalidad>
-          <Nombre>Carlos</Nombre>
-        </Alumno>
-      </Alumnos>
-      <Clase>Programacion</Clase>
-    </Jornada>
     <Jornada>
       <Alumnos>
         <Alumno>
@@ -86,6 +57,12 @@
         </Alumno>
       </Alumnos>
       <Clase>Laboratorio</Clase>
+      <Instructor>
+        <Apellido>Lopez</Apellido>
+        <DNI>12234456</DNI>
+        <Nacionalidad>Argentino</Nacionalidad>
+        <Nombre>Juan</Nombre>
+      </Instructor>
     </Jornada>
     <Jornada>
       <Alumnos>
@@ -98,15 +75,17 @@
         <Alumno>
           <Apellido>Smith</Apellido>
           <DNI>22236456</DNI>
-          <Nacionalidad>Extranjero</Nacionalidad>
+          <Nacionalidad>Argentino</Nacionalidad>
           <Nombre>Rodrigo</Nombre>
         </Alumno>
       </Alumnos>
       <Clase>Legislacion</Clase>
-    </Jornada>
-    <Jornada>
-      <Alumnos />
-      <Clase>SPD</Clase>
+      <Instructor>
+        <Apellido>Lopez</Apellido>
+        <DNI>12234456</DNI>
+        <Nacionalidad>Argentino</Nacionalidad>
+        <Nombre>Juan</Nombre>
+      </Instructor>
     </Jornada>
   </Jornadas>
 </Universidad>

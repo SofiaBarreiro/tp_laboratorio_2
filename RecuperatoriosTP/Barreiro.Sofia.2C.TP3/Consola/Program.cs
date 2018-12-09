@@ -13,6 +13,7 @@ namespace Consola
     {
         static void Main(string[] args)
         {
+            Console.Title = "Barreiro.Sofia.2C.TP3";
 
             Universidad gim = new Universidad();
             Alumno a1 = new Alumno(1, "Juan", "Lopez", "12234456",
@@ -99,6 +100,7 @@ namespace Consola
             {
                 Console.WriteLine(e.Message);
             }
+            
             Console.WriteLine(gim.ToString());
             Console.ReadKey();
             Console.Clear();
@@ -123,6 +125,8 @@ namespace Consola
                 Console.WriteLine(e.Message);
             }
             Console.ReadKey();
+
+
         }
     
     }

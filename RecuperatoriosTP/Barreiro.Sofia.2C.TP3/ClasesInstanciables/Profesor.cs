@@ -12,42 +12,19 @@ namespace ClasesInstanciables
     public sealed class Profesor : Universitario
     {
 
+        #region Atributos
+
         private Queue<Universidad.EClases> clasesDelDia;
         private static Random random;
 
-        private void _randomClases()
-        {
-
-            int nroAleatorio = random.Next();
-            switch (nroAleatorio)
-            {
-                case 0:
-                    this.clasesDelDia.Enqueue(Universidad.EClases.Programacion);
-                    break;
-                case 1:
-                    this.clasesDelDia.Enqueue(Universidad.EClases.Laboratorio);
-                    break;
-                case 2:
-                    this.clasesDelDia.Enqueue(Universidad.EClases.Legislacion);
-                    break;
-                case 3:
-                    this.clasesDelDia.Enqueue(Universidad.EClases.SPD);
-                    break;
-                default:
-                    break;
-            }
+        #endregion
 
 
-        }
 
 
-        protected override string MostrarDatos()
-        {
-
-            return this.ToString();
 
 
-        }
+        #region Operadores
 
         public static bool operator !=(Profesor i, Universidad.EClases clase)
         {
@@ -56,19 +33,28 @@ namespace ClasesInstanciables
 
         }
 
+        /// <summary>
+        /// comprueba que profesor no este ya asignado a esa clase
+        /// </summary>
+        /// <param name="i"></param>
+        /// <param name="clase"></param>
+        /// <returns></returns>
         public static bool operator ==(Profesor i, Universidad.EClases clase)
         {
+            bool retorno = false;
             foreach (Universidad.EClases aux in i.clasesDelDia)
             {
 
-                if (clase == aux)
+                if (aux == clase)
                 {
-                    return true;
+                    retorno= true;
                 }
             }
-            return false;
+            return retorno;
         }
 
+#endregion
+        #region Constructores
         static Profesor()
         {
             random = new Random();
@@ -79,36 +65,75 @@ namespace ClasesInstanciables
             
 
         }
-        protected override string ParticiparEnClase()
-        {
-            StringBuilder cadena = new StringBuilder();
-            cadena.AppendFormat("Clases del dia: ");
-            foreach (Universidad.EClases aux in this.clasesDelDia) {
 
-                cadena.AppendFormat("{0}", aux.ToString());
+
+        public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
+            : base(id, nombre, apellido, dni, nacionalidad)
+        {
+
+            this.clasesDelDia = new Queue<Universidad.EClases>();
+            while (this.clasesDelDia.Count < 2)
+            {
+                this._randomClases();
             }
 
-            return cadena.ToString();
         }
-        public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
-            :base(id,nombre,apellido,dni,nacionalidad)
+
+        #endregion
+
+
+        #region  Metodos
+        /// <summary>
+        /// inserta una lista de clases a clasesDeldia de manera aleatoria
+        /// </summary>
+        private void _randomClases()
         {
-            
-            this.clasesDelDia = new Queue<Universidad.EClases>(2);
-            this._randomClases();
-            Thread.Sleep(1000);
-            this._randomClases();
+            this.clasesDelDia.Enqueue((Universidad.EClases)random.Next(0, 3));
 
         }
 
-        public override string ToString()
+
+
+        /// <summary>
+        /// arma una cadena de texto con las clases del dia
+        /// </summary>
+        /// <returns></returns>
+        protected override string ParticiparEnClase()
         {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("\nCLASES DEL DIA:\n");
+            foreach (Universidad.EClases c in this.clasesDelDia)
+            {
+                sb.AppendLine(c.ToString());
+            }
+            return sb.ToString();
+        }
+        /// <summary>
+        /// arma una cadena de texto con los datos de la clase Universitario y con el metodo ParticiparEnClase
+        /// </summary>
+        /// <returns></returns>
+        protected override string MostrarDatos()
+        {
+
             StringBuilder cadena = new StringBuilder();
-            cadena.AppendLine(base.ToString());
+            cadena.AppendLine(base.MostrarDatos());
             cadena.AppendLine(this.ParticiparEnClase());
             return cadena.ToString();
 
+
         }
+
+        /// <summary>
+        /// llama al metodo MostrarDatos que devuelve un string
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+
+            return this.MostrarDatos();
+        }
+
+        #endregion
 
     }
 }

@@ -73,6 +73,7 @@
             this.lstEstadoEntregado.Name = "lstEstadoEntregado";
             this.lstEstadoEntregado.Size = new System.Drawing.Size(218, 173);
             this.lstEstadoEntregado.TabIndex = 11;
+            this.lstEstadoEntregado.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lstEstadoEntregado_MouseUp_1);
             // 
             // lstEstadoEnViaje
             // 
@@ -139,13 +140,16 @@
             this.cmsListas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MostrarToolStripMenuItem1});
             this.cmsListas.Name = "contextMenuStrip1";
-            this.cmsListas.Size = new System.Drawing.Size(181, 26);
+            this.cmsListas.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.cmsListas.ShowCheckMargin = true;
+            this.cmsListas.Size = new System.Drawing.Size(138, 26);
+            this.cmsListas.Text = "Mostar";
             // 
             // MostrarToolStripMenuItem1
             // 
             this.MostrarToolStripMenuItem1.Name = "MostrarToolStripMenuItem1";
-            this.MostrarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.MostrarToolStripMenuItem1.Text = "toolStripMenuItem1";
+            this.MostrarToolStripMenuItem1.Size = new System.Drawing.Size(174, 22);
+            this.MostrarToolStripMenuItem1.Text = "Mostrar";
             this.MostrarToolStripMenuItem1.Click += new System.EventHandler(this.MostrarToolStripMenuItem1_Click);
             // 
             // btnMostrarTodos

@@ -10,13 +10,16 @@ namespace Archivos
 {
     public class Texto: IArchivo<string>
     {
-        
+
         public bool Guardar(string archivo, string datos)
         {
+
+            StreamWriter streamW = null;
             try
             {
+               
 
-                StreamWriter streamW = new StreamWriter(archivo, true);
+                streamW = new StreamWriter(archivo);
                 streamW.WriteLine(datos);
                 return true;
             }
@@ -25,23 +28,42 @@ namespace Archivos
                 Console.WriteLine(e.Message);
                 return false;
             }
+            finally
+            {
+                streamW.Close();
+
+            }
         }
        
            
            
+        /// <summary>
+        /// lee los datos de que se encuentra en el archivo Jornada.txt
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Leer(string archivo, out string datos)
         {
+            StreamReader streamR = null;
             bool retorno = false;
             try
             {
-                StreamReader streamR = new StreamReader(archivo);
-                datos=streamR.ReadToEnd();
-                retorno= true;
+                streamR = new StreamReader(archivo);
+
+
+                datos = streamR.ReadToEnd();
+                
+
+                retorno = true;
             }
             catch (ArchivosException e)
             {
                 throw new ArchivosException(e);
-                retorno = false;
+            }
+            finally
+            {
+                streamR.Close();
             }
 
             return retorno;

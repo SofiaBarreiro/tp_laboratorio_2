@@ -27,8 +27,9 @@ namespace Entidades
         #endregion
         #region Eventos
         public delegate void DelegadoEstado(object sender, EventArgs e);
-
+        public delegate void DelegadoSQL();
         public event DelegadoEstado InformaEstado;
+        public event DelegadoSQL InformarSQL;
 
         #endregion
 
@@ -115,9 +116,16 @@ namespace Entidades
             while (this.Estado != EEstado.Entregado);
             if (this.Estado == EEstado.Entregado)
             {
-              
-                PaqueteDAO.Insertar(this);
+
+                if (PaqueteDAO.Insertar(this))
+                {
+
+                    InformarSQL();
+                }
+               
             }
+
+
 
         }
 

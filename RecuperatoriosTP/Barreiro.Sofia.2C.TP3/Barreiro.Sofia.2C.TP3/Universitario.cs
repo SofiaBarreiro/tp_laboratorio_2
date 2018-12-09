@@ -8,12 +8,15 @@ namespace EntidadesAbstractas
 {
     public abstract class Universitario : Persona
     {
-
-        private int legajo;
+        #region Atributos
+        protected int legajo;
+        #endregion
+        #region Operadores
         public override bool Equals(object obj)
         {
 
-            if (obj is Universitario) {
+            if (obj is Universitario)
+            {
 
                 return true;
             }
@@ -22,20 +25,15 @@ namespace EntidadesAbstractas
         }
 
 
-        protected virtual string MostrarDatos()
-        {
-           
 
-            string retorno = string.Format("legajo: {0}\n{1}", this.legajo, base.ToString());
-            return retorno;
-
-        }
+        
 
 
+       
         public static bool operator ==(Universitario pg1, Universitario pg2)
         {
 
-            if (!(Equals(pg1,null)) && !(Equals(pg2,null)))
+            if (!(Equals(pg1, null)) && !(Equals(pg2, null)))
             {
 
                 if (pg1.legajo == pg2.legajo)
@@ -52,12 +50,14 @@ namespace EntidadesAbstractas
 
                 }
 
-
-            }
+              }
+            
 
             return false;
 
         }
+
+    
 
         public static bool operator !=(Universitario pg1, Universitario pg2)
         {
@@ -66,12 +66,12 @@ namespace EntidadesAbstractas
 
         }
 
-
-        protected abstract string ParticiparEnClase();
+        #endregion
+        #region Constructores
 
 
         public Universitario()
-            :base()
+            :base()          
         {
         }
 
@@ -80,9 +80,29 @@ namespace EntidadesAbstractas
         {
             this.legajo = legajo;
         }
+        #endregion
+        #region Metodos
+        /// <summary>
+        /// Retorna una cadena con los datos de Universitario y Persona
+        /// </summary>
+        /// <returns>Los datos de Univesitario</returns>
+        protected virtual string MostrarDatos()
+        {
+
+            StringBuilder cadena = new StringBuilder();
+            cadena.AppendFormat(base.ToString());
+            cadena.AppendFormat("\nLegajo: {0}", this.legajo);
+            return cadena.ToString(); ;
+
+        }
+
+        /// <summary>
+        /// Metodo abstracto 
+        /// </summary>
+        /// <returns></returns>
+        protected abstract string ParticiparEnClase();
 
 
-
-
+        #endregion
     }
 }
