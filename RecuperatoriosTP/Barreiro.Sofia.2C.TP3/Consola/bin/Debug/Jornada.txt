@@ -1,5 +1,5 @@
 
-TOMA CLASES DE: Laboratorio
+TOMA CLASES DE: Programacion
 POR: 
 Nombre: Juan
 Apellido: Lopez
@@ -8,16 +8,24 @@ Nacionalidad: Argentino
 Legajo: 1
 
 CLASES DEL DIA:
+Programacion
 Legislacion
-Laboratorio
 
  
 ALUMNOS: 
-Nombre: Joaquin
-Apellido: Suarez
-DNI: 91122456
-Nacionalidad: Extranjero
-Legajo: 7
+Nombre: Juan
+Apellido: Lopez
+DNI: 12234456
+Nacionalidad: Argentino
+Legajo: 1
+Estado de Cuenta: Becado
+TOMA CLASES DE :Programacion
+
+Nombre: Carlos
+Apellido: Gonzalez
+DNI: 12236456
+Nacionalidad: Argentino
+Legajo: 5
 Estado de Cuenta: AlDia
-TOMA CLASES DE :Laboratorio
+TOMA CLASES DE :Programacion
 -------------------------------------->

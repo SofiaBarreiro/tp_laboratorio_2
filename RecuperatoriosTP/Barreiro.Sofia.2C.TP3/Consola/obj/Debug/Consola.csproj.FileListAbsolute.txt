@@ -26,3 +26,6 @@ C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\Barreiro.Sofia.2C
 C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\ClasesInstanciables.pdb
 C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\Excepciones.pdb
 C:\Users\barre\Desktop\Barreiro.Sofia.2C.TP3\Consola\obj\Debug\Consola.csprojResolveAssemblyReference.cache
+C:\REPOSITORIO LABORATORIO\RecuperatoriosTP\Barreiro.Sofia.2C.TP3\Consola\bin\Debug\Consola.exe.config
+C:\REPOSITORIO LABORATORIO\RecuperatoriosTP\Barreiro.Sofia.2C.TP3\Consola\obj\Debug\Consola.exe
+C:\REPOSITORIO LABORATORIO\RecuperatoriosTP\Barreiro.Sofia.2C.TP3\Consola\obj\Debug\Consola.pdb
